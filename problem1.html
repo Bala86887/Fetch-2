@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>es6</title>
+    <style>
+
+  </style>
+</head>
+<body>
+
+
+
+
+
+  Write a function to convert a character to lower case
+  Use this function to convert a given word to lower case
+  Use that function to convert an array of strings to array of lower case strings
+  Sample Input ["MA", "SA", "I", "SCH", "OOL"]
+  Sample Output ["ma", "sa", "i", "sch", "ool"]
+
+
+  
+</body>
+</html>
+
+<script>
+function one(check){
+  let uppercase="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+let lowercase="a,b,c,d,e,f,g,,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
+for(let j=0;j<uppercase.length;j++){
+if(check==uppercase[j]){
+  check=lowercase[j]
+ 
+}
+
+}
+return check
+}
+
+function two(array){
+for(let i=0;i<array.length;i++){
+let first=array[i]
+let s=""
+for(let j=0;j<first.length;j++){
+
+let second=one(first[j])
+s=s+second
+
+
+}
+console.log(s)
+}
+
+}
+two(["MA","SA","I","SCH","OOL"])
+</script>
